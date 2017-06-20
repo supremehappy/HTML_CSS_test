@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*동위 선택자*/
+        /*
+        '+' 선택자 a 바로 뒤에 있는 선택자 b를 선택
+        '~' 선택자 a 뒤에 위치하는 선택자 b를 선택
+        */
+        h1+h2 {color: red;} 
+        h1~h2 {background-color: orange;}
+    </style>
+</head>
+<body>
+    <!--동위 선택자-->
+    <h1>header -1</h1>
+    <h2>header -2</h2>
+    <h2>header -2</h2>
+    <h2>header -2</h2>
+    <h2>header -2</h2>
+</body>
+</html>
