@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*3번*/
+        #bg1{
+            background: red;
+        }
+        
+        /*4번*/
+        .bg2{
+            color: blue;
+        }
+        
+        /*6번*/
+        #font{
+            color: red;
+        }
+        
+        /*7번*/
+        .font2{
+            color: blue;
+        }
+        
+        /*9번*/
+        #font3 > h1{background-color: blue;}
+        
+        /*10번*/
+        .font4:hover{
+            background-color: blue; color: white;
+        }
+        
+        /* 8번
+        p:nth-of-type(1){
+        color:red;
+        }
+        */
+    </style>
+</head>
+<body>
+   <!--1번-->
+    <div>
+       <table>
+           <tr>
+               <td><label>Email 수신여부</label></td>
+           </tr>
+           <tr>
+               <td><label>예</label></td>
+               <td><input type="radio"/></td>
+           </tr>
+           <tr>
+               <td><label>아니오</label></td>
+               <td><input type="radio"/></td>
+           </tr>
+       </table>
+    </div>
+    <br>
+    
+    <!--2번-->
+    <div>
+        <select>
+            <option>html5</option>
+            <option>css</option>
+            <option>jsp</option>
+        </select>
+    </div>
+    <br>
+    
+    <!--3번-->
+    <div id="bg1">dddd</div>
+    <br>
+    
+    <!--4번-->
+    <div class="bg2">test</div>
+    <br>
+    
+    <!--6~9번-->
+    <!--6번--><!--8번-->
+    <p id="font"> HTML5</p>
+    <!--7번-->
+    <p class="font2"> HTML5</p>
+    <!--9번-->
+    <div id="font3">
+        <h1>HTML5</h1>
+        <h2>HTML5 is a standard language for modern web.</h2>
+    </div>
+    <br>
+    
+    <!--10번-->
+    <div class="font4">test!!!!!!!!!!!!!!!!!!!</div>
+
+</body>
+</html>

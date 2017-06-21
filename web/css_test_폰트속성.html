@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);/*외부 폰트 적용*/
+        /*font-size*/
+        .a{font-size: 32px;}
+        .b{font-size: 2em;}
+        .c{font-size: large;}
+        .d{font-size: small;}
+        
+        /*font-family*/
+        .font_arial{font-family: Arial}
+        .font_roman{font-family: 'Times New Roman'}
+        
+        .font_arial1{font-family: '',sans-serif}
+        .font_roman1{font-family: '',serif}
+        
+        .font{font-family: 'Nanum Pen Script', serif;}/*외부 폰트 적용*/
+        
+        /*font-style, font-weight*/
+        .font_big{font-size: 2em}
+        .font_italic {font-style: italic}
+        .font_bold{font-weight: bold}
+        
+        /*text-decoration*/
+        a{text-decoration: none}
+        
+        /*position*/
+        .box{
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        .red{
+            background-color: red;
+            left: 10px;top: 10px;
+        }
+        .green{
+            background-color: green;
+            left: 50px;top: 50px;
+        }
+        .blue{
+            background-color: blue;
+            left: 90px;top: 90px;
+        }
+    </style>
+</head>
+<body>
+   <!--font-size-->
+    <h1>test</h1>
+    <p class="a">test</p>
+    <p class="b">test</p>
+    <p class="c">test</p>
+    <p class="d">test</p>
+    <br>
+    
+    <!--font-family-->
+    <h1 class="font_arial">test1</h1>
+    <p  class="font_roman">test1</p>
+    
+    <h1 class="font_arial1">test1</h1>
+    <p  class="font_roman1">test1</p>
+    
+    <p class="font">test2</p>
+    <br>
+    
+    <!--font-style, font-weight-->
+    <p class="font_big font_italic font_bold">test3</p>
+    <br>
+    
+    <!--text-decoration-->
+    <h1>
+        <a href="#">test3</a>
+    </h1>
+    <br>
+    
+    <!--position-->
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    
+</body>
+
+</html>

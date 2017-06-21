@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*박스속성*/
+        /*
+        박스 크기
+        너비 : wid +2(magin+border+padding)
+        높이 : height +2(magin+border+padding)
+        */
+        #box1{
+            width: 100px; height: 100px; background-color: red;
+            
+        }
+        #box2{
+            width: 100px; height: 100px; background-color: red;
+            border: 20px solid black; margin: 10px; padding: 30px
+        }
+        #box3{
+            width: 100px; height: 100px; background-color: red; 
+            /*
+            magin : 위 아래 왼 오
+            magin : 왼 오
+            padding : 위 아래 왼 오
+            padding : 왼 오
+            */
+            margin: 0 30px;padding: 0 30px;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <br>
+    <div id="box2"></div>
+    <br>
+    <div id="box3"></div>
+    <br>
+    
+</body>
+</html>

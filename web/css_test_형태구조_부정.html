@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*형태구조선택자:태그형태를 구분*/
+        h1:first-of-type{color: red;}
+        h2:first-of-type{color: red;}
+        h3:first-of-type{color: red;}
+        
+        /*부정선택자*/
+        input:not([type=password]){
+            background: red;
+        }
+    </style>
+    
+</head>
+<body>
+   <!--형태구조선택자-->
+    <h1>tset1</h1>
+    <h2>tset2</h2>
+    <h3>tset3</h3>
+    <h3>tset3</h3>
+    <h2>tset2</h2>
+    <h1>tset1</h1>
+    <br>
+    
+    <!--부정선택자-->
+    <input type="password" />
+    <input type="text" />
+    <input type="password" />
+    <input type="text" />
+    <br>
+</body>
+</html>
