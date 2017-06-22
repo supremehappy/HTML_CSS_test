@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout test</title>
+    <style>
+        	
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        *{padding: 0; margin: 0;}
+        
+        #t1{
+            width: 800px; height: 200px;
+            background-image: url(image/h1.png);
+            color: white
+        }
+        
+        #t3{
+            width: 800px; height: 800px;
+            background-color: cornflowerblue;
+            overflow-y: scroll;
+        }
+        
+        #t4{
+            width: 800px; height: 200px;
+            background-image: url(image/f1.png);
+             position: relative;
+            clear: both;
+        }
+        
+        #form1{
+            border-radius: 10px 10px 10px 10px;
+            border: 3px solid gray;
+            width: 700px;
+        }
+        
+        #form2{
+            border-radius: 10px 10px 10px 10px;
+            border: 3px solid gray;
+            width: 700px;
+            
+        }
+        
+        #h1{
+            font-family: 'Nanum Pen Script', serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="t1">
+       <h1>ㅅㄷㄴㅅ</h1>
+    </div><!--t1-->
+    <div id="t3">
+        <h1 id="h1">
+            <form id="form1">
+               앙돼
+            </form>
+        </h1>
+        <form id="form2">
+           <p id="h1">망했어요.</p>
+           <img src="image/testa.PNG"/>   
+           <p id="h1">난 블로그를 만들고 싶었을 뿐이고!</p>
+           <p id="h1">근데 공대생이라 디자인 감각이 없을 뿐이고!</p>
+           <p id="h1">망했을뿐이고!</p>
+           <img src="image/teste.PNG"/>
+           <p id="h1">운명하셨습니다.</p>
+        </form>
+    </div><!--t3-->
+    <div id="t4">
+        <ul>
+            <li>prologue</li>
+            <li>blog</li>
+            <li>잡다</li>
+        </ul>        
+    </div><!--t4-->
+</body>
+</html>

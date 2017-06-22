@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*flaot*/
+        img{
+            float: right;
+        }
+        .box{
+            width: 100px; height: 100px;
+            background-color: red;
+            margin: 10px; padding: 10px;
+            
+            float: left;/*왼쪽 수평정렬*/
+        }
+        .box1{
+            width: 100px; height: 100px;
+            background-color: red;
+            margin: 10px; padding: 10px;
+            
+            float: right;/*왼쪽 수평정렬*/
+        }
+        
+        /*text-shadow*/
+        .font{
+            text-shadow: 5px 5px 5px black;
+        }
+        .box2{
+            border: 3px solid black;
+            /*text-shadow,box-shadow : 오른쪽 아래 흐림 색상*/
+            box-shadow: 10px 10px 30px black;
+            text-shadow: 5px 5px 5px black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <!--float-->
+    <div>
+        <img src="image/hanbit.jpg"/>
+        <p>test</p>
+    </div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <br>
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--text-shadow-->
+    <p class="font">test</p>
+    <div class="box2">test</div>
+</body>
+</html>

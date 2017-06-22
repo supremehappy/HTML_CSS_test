@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+     /*position*/
+        .box{
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+        .box:nth-child(1){
+            background-color: red;
+            left: 10px;top: 10px;
+            
+            z-index: 100;/*위로 올라옴*/
+        }
+        .box:nth-child(2){
+            background-color: green;
+            left: 50px;top: 50px;
+            
+            z-index: 10;
+        }
+        .box:nth-child(3){
+            background-color: blue;
+            left: 90px;top: 90px;
+            
+            z-index: 1;
+        }
+        
+        body > div{
+            width: 400px; height: 100px;
+            border: 3px solid black;
+            position: relative;
+            overflow-y: scroll; /*영역을 벗어날때 스크롤로 처리*/
+        }
+        
+        .box1{
+            width: 100px; height: 100px;
+            background-color: red;
+            margin: 10px; padding: 10;
+        }
+    </style>
+</head>
+<body>
+   <h1>test!!!!!!!!!!!!!!!!!!!</h1>
+    <!--position-->
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>test?????????????????</h1>
+
+</body>
+</html>

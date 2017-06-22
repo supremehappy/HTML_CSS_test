@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        #header{
+            width: 100%; height: 150px;
+            /*background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); */
+            background-image: url("image/14.jpg");
+            background-size: 100%;
+            color: white;
+            position: relative;
+        }
+        #nav{
+            width: 230px; height: 50px; /*background-color: cornflowerblue;*/
+            color: white;
+            position: absolute;
+            bottom: 0; right: 0;
+        }
+        #nav li{
+            float: left;
+            list-style: none;
+            padding: 10px;
+        }
+        #nav2{
+            width: 180px; height: 50px; /*background-color: cornflowerblue;*/
+            color: white;
+            position: absolute;
+            top: 0; right: 0;
+        }
+        #nav2 li{
+            float: left;
+            list-style: none;
+            padding: 10px;
+        }
+        #aside{
+            width: 200px; height: 800px; 
+            /*background-color: cornflowerblue;*/
+            background-image: url("image/14.jpg");
+            float: left;
+        }
+        #section{
+            width: 100%; height: 800px;
+            background-color: whitesmoke;            
+                        
+        }
+        #footer{
+            width: 100%; height: 100px;
+            background-color: blanchedalmond;
+            clear: both;
+        }
+        #wrap{
+            width: 100%; margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>test</h1>
+            <div id="nav">
+                <ul>
+                    <li>ex1</li>
+                    <li>ex2</li>
+                    <li>ex3</li>
+                    <li>ex4</li>
+                    <li>ex5</li>
+                </ul>
+            </div><!--nav-->
+            <div id="nav2">
+                <ul>
+                    <li>ex1</li>
+                    <li>ex2</li>
+                    <li>ex3</li>                    
+                </ul>
+            </div><!--nav-->
+        </div><!--header-->
+        <div id="aside"></div><!--aside-->
+        <div id="section"></div><!--section-->
+        <div id="footer"></div><!--footer-->
+        
+    </div><!--wrap-->
+</body>
+</html>
