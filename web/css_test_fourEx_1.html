@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0"> 
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+        /*초기화*/
+        *{
+            margin: 0; padding: 0;
+            font: normal 15px '돋움';
+        }
+        a{ text-decoration: none; }
+        img { border: 0;}
+        ul { list-style: none;}
+        
+        body{ width: 980px; margin: 0 auto;}
+    </style>
+    <style>  
+        #header{
+            position: relative;
+            width: 300px; height: 1000px;
+            background-image: url(image/headerEx.png);
+            float: left;
+            
+        }
+        #header > h1.logo {
+            position: absolute;
+            left: 15px; top: 10px;
+            background-color: aliceblue;
+        }
+        #header > div.menu{
+            position: absolute;
+            right: 0; top: 0;
+            
+        }
+        #header > div.icon_menu{
+            position: absolute;
+            left: 110px; top: 350px;           
+        }
+        #header > div.icon_menu> ul{
+            position:absolute; right:0px;  bottom:10px; /*opacity:0;*/ transition:all 0.4s;     
+        }
+        #header > div.icon_menu> img:hover ul{
+            opacity:0.8; left:205px;    
+        }
+        #header > div.footer{
+            position: absolute;
+            left: 0; bottom: 0;
+        }
+    </style>
+    <style> 
+        #content{
+            position: relative;
+            width: 600px; height: 1000px;
+            background-image: url(image/sectionEx.png);
+            float: left;
+            
+        }
+        #content > div.title{
+            position: absolute;
+            width: 500px; height: 30px;
+            background-image: url(image/titleEx.png);
+            left: 15px; top: 10px;
+            font-size: 30px;
+            font-family: 'Nanum Pen Script', serif;
+            border-radius: 10px 10px 10px 10px;
+            
+        }
+        #content > div.section{
+            position: absolute;
+            width: 500px; height: 800px;
+            background-image: url(image/sectionEx2.png);
+            left: 15px; top: 50px;
+            font-size: 60px;
+            font-family: 'Nanum Pen Script', serif;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="logo">
+            <a href="#"></a><img src="image/1112.JPG" width=150px height=100px; />
+        </h1>
+        <div class="menu">
+            <span><a href="#">login</a></span>
+            <span><a href="#">sign up</a></span>
+            <span><a href="#">Q&A</a></span>
+        </div>
+        <div class="icon_menu">
+            <img src="image/1234.png" width=100px height=100px;/>
+            <ul>
+                <li><a href="#"><em><b>profile</b></em></a></li>
+                <li><a href="#"><em><b>blog</b></em></a></li>
+                <li><a href="#"><em><b>write</b></em></a></li>
+                <li><a href="#"><em><b>setting</b></em></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <span><a href="#">supremehappy@naver.com</a></span>
+        </div>
+    </div>
+    <div id="content">
+        <div class="title">
+            .......엑스컴2 요약 짤.jpg
+        </div>
+        <div class="section">
+           <br>
+           <img src="image/xcom1.JPG" width=400px />
+           <br>
+           <img src="image/xcom2.JPG" width=400px />
+           <br>
+           확률의 위대함을 깨우쳐주는 갓게임, 여러분은 이제 엑스컴 2를 다 즐기신겁니다.
+        </div>
+        <br>
+        
+    </div>
+</body>
+</html>

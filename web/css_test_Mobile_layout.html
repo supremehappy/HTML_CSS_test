@@ -1,0 +1,93 @@
+<!--모바일-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0"> 
+    <title>Document</title>
+    
+    <style>
+        *{padding: 0; margin: 0;}
+        
+        header{
+            height: 45px; background-image: url(image/header_background.png);
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
+        .left{
+            width: 62px; height: 32px;
+            text-indent: -99999px;
+            background-image: url(image/header_left_button.png);
+            position: absolute;
+            left: 5px; top: 5px;
+        }
+        
+        .right{
+            width: 32px; height: 32px;
+            text-indent: -99999px;
+            background-image: url(image/header_right_button.png);
+            position: absolute;
+            right: 5px; top: 5px;
+        }
+        
+        header h2{
+            padding-top: 5px;
+        }
+        
+        #gnb{
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            background-color: darkred;
+        }
+        
+        #gnb > div > A{
+            float: left;
+            width: 25%; height: 35px; text-align: center;
+            color: white; text-decoration: none;
+            line-height: 35px;
+                
+        }
+        
+        footer{
+            width: 100%; background-color: black;
+            color: white; text-align: center;
+            position: fixed; bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a class="left" href="#">Main</a>
+            <h2>test</h2>
+            <a class="right" href="#">Menu</a>
+        </header>
+        
+        <nav id="gnb">
+            <div><a href="#">가입</a></div>
+            <div><a href="#">소개</a></div>
+            <div><a href="#">상품</a></div>
+            <div><a href="#">보드</a></div>
+        </nav>
+        
+        <section>
+            <h3>test2</h3>
+            <p>
+             웹타임 교육센터는 IT 전문교육과 인적자원개발(HRD) 교육을 함께 제공하는 Total Learning Solution Center 입니다.
+
+IT전문교육/리더십/경영 분야의 차별화된 교육 컨텐츠와 강남에 위치한 최신시설의 강의환경을 제공하고 있으며 최상의 고객맞춤형 교육서비스를 제공합니다.
+
+학습을 통해 리더십과 변화관리전략 및 성과창출을 추구하며 전략적으로 인적자원을 개발(Strategic HRD) 하는 것을 목표로 고객에 Customizing된 맞춤형 프로그램을 제공하여 전략적 고성과 인재(High Performance Worker) 육성을 통한 고객 개인의 발전과 조직의 발전으로 이어지도록 합니다.
+
+웹타임 교육센터는 고객 만족을 극대화하는 고품질의 교육과정과 고객의 필요와 직무향상에 필요한 경영 및 기술 교육을 서비스 및 최적의 교육환경을 제공하여 창조적인 교육문화를 선도하고 고객의 발전을 최우선으로 서비스하고 있습니다.
+            </p>                                   
+        </section>
+        
+        <footer>
+            &copy;testtttt
+        </footer>
+    </div>
+</body>
+</html>

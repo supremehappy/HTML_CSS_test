@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px; height: 100px; background-color: red;
+            transition-duration: 2s;
+            /*transition-timing-function: cubic-bezier(0,1.58,1,-0.2);*/
+            /*transition-timing-function: ease;*/ 
+            transition-timing-function: linear;
+        }
+        #box1:hover{
+            width: 300px; height: 300px; background-color: blue;
+        }
+        #circle{
+            width: 200px; height: 200px;
+            background-color: orange;
+            border-radius: 50%;
+            text-align: center; line-height: 200px;
+            position: absolute;
+            animation-name: myani;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes myani{
+            from{
+                left: 0; transform:rotate(0deg)
+            }
+            to{
+                left: 200px; transform: rotate(360deg)
+            }
+        }
+        
+        #box2{
+            width: 100px; height: 100px;
+            background-color: blueviolet;
+            position: absolute; top: 300px; left: 100px;
+            transition: 1s;
+        }
+        
+        #box2:hover{
+            transform: scale(2);
+        }
+        
+        #box3{
+            transform: translateX(100px);
+            width: 200px; height: 200px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        box1
+    </div>
+    <br>
+    <br>
+    <div id="circle">
+        circle
+    </div>   
+    <div id="box2">
+        box2
+    </div>
+    <div id="box3">
+        box3
+    </div>
+</body>
+</html>
