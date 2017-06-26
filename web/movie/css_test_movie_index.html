@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+        #menu img{
+            width: 64px; height: 64px;
+            top: 5px; left: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <img src="img/01.jpg" width="100%" />
+        </div>
+        <div data-role="content">
+            <ul id="menu" data-role="listview" data-inset="true" data-theme="b" data-divider-theme="a" data-count-theme="a">
+                <li data-role="list-divider">리스트</li>
+                <li><a href="css_test_movie_photo.html" data-theme="a"><img src="img/01.png"/>영화이미지 </a></li>
+                <li><a href="css_test_movie_movie.html"><img src="img/02.png"/>영화동영상 </a></li>
+                <li><a href="css_test_movie_introduce.html"><img src="img/03.png"/>영화소개 </a></li>
+                <li><a href="css_test_movie_calender.html"><img src="img/04.png"/>영화상영일 </a></li>
+                <li><a href="css_test_movie_map.html"><img src="img/05.png"/>상영관위치 </a></li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h3>&copy;CGV ALL rights reserved</h3>
+        </div>
+    </div>
+</body>
+</html>
