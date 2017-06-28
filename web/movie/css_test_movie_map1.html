@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <a href="css_test_movie_index.html" rel="external" data-icon="home">home</a>
+            <a href="css_test_movie_index.html" rel="external" data-icon="back">prev</a>
+            <h1>상영관위치</h1>
+        </div>
+        
+        <div data-role="content">
+            <div id="googleMap"  style ="width:100%; height: 500px"></div>
+
+                                    <!-- Add Google Maps -->
+                                    <script src="http://maps.googleapis.com/maps/api/js"></script>
+                                    <script>
+                                    var myCenter = new google.maps.LatLng(37.501600, 127.026334);
+                                    var myCenter2 = new google.maps.LatLng(37.524290, 127.029377);
+                                    var myCenter3 = new google.maps.LatLng( 37.522877, 127.036875); 
+                                       
+                                    function initialize() {
+                                    var mapProp = {
+                                    center:myCenter,
+                                    zoom:13,
+                                    scrollwheel:true,
+                                    draggable:true,
+                                    mapTypeId:google.maps.MapTypeId.ROADMAP
+                                    };
+
+                                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                                    var marker = new google.maps.Marker({
+                                    position:myCenter,
+                                    });
+                                        
+                                        
+                                    var marker2 = new google.maps.Marker({
+                                    position:myCenter2,
+                                    });
+                                        
+                                    var marker3 = new google.maps.Marker({
+                                    position:myCenter3,
+                                    });
+
+                                    marker.setMap(map);
+                                    marker2.setMap(map);
+                                    marker3.setMap(map);
+                                        
+                                    var content="cgv강남<br>";
+                                    content+="<img src = 'img/cgv01.jpg' style='float:left'>";           
+                                    content+="<a herf = 'tel:1544-1122'>T:1544-1122</a>";
+
+                                    
+
+                                        
+                                   var infowindow = new google.maps.InfoWindow({
+
+                                    content: content
+
+                                });
+
+                                  
+            
+                                        
+                                              var content2="cgv압구정<br>";
+
+                                    content2+="<a herf = 'tel:1544-1122'>T:1544-1122</a>";
+
+                                    
+
+                                        
+                                       var infowindow2 = new google.maps.InfoWindow({
+
+                                        content: content2
+
+                                    });
+                                        
+                                                
+                                     var content3="cgv청담<br>";
+
+                                    content3+="<a herf = 'tel:1544-1122'>T:1544-1122</a>";
+
+                                    
+
+                                        
+                                       var infowindow3 = new google.maps.InfoWindow({
+
+                                        content: content3
+
+                                    });
+                                        
+
+                                      
+
+                                     infowindow.open(map, marker);      
+                                     infowindow2.open(map, marker2);
+                                     infowindow3.open(map, marker3);
+                                        
+                                    }
+
+                                    google.maps.event.addDomListener(window, 'load', initialize);
+                                    </script>
+        </div>
+        <div data-role="footer">
+            <h3>&copy;CGV ALL rights reserved</h3>
+        </div>
+    </div>    
+</body>
+</html>
