@@ -3,19 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <style>
+        .t1{
+            float: left;
+            position: sticky;
+            top: 10px; right: 10px;
+            z-index: 1;
+        }
+        .t2{
+            float: right;
+            position: sticky;
+            top: 10px; right: 10px;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
+   <div>
+        <button type="button" class="t1 btn btn-success" data-toggle="modal" data-target="#myModal">login</button>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Log-in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Pw:</label>
+                            <div class="col-sm-10"> 
+                              <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <button type="button" class="btn btn-primary btn-md t2" data-toggle="modal" data-target="#myModal1">buy</button>
+        
+        <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Game Select</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li>Stardew Valley</a></li>
+                            <li>Resident Evil7</a></li>
+                            <li>Little Nightmares</a></li>
+                            <li>Xcom2</a></li>
+                            <li>Dark Souls3</a></li>
+                            <li>Left 4 Dead2</a></li>
+                            <li>Nier:Automata</a></li>
+                            <li>Battle Grounds</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info">Ok</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="jumbotron">
             <h1>2017 Steam Summer Sale</h1>
@@ -26,7 +110,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <a href="css_test_gameshop_stardewvalley.html" target="css_test_gameshop_stardewvalley.html">
+                    <a href="css_test_gameshop_stardewvalley.html">
                         <img src="img/s01.jpg" alt="스타듀밸리" style="width:100%">
                         <div class="caption">
                             <p>스타듀밸리</p>
@@ -36,7 +120,7 @@
             </div>
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <a href="css_test_gameshop_residentevll7.html" target="css_test_gameshop_residentevll7.html">
+                    <a href="css_test_gameshop_residentevil7.html">
                         <img src="img/b01.jpg" alt="바이오하자드7" style="width:100%">
                         <div class="caption">
                             <p>바이오하자드7</p>
@@ -46,7 +130,7 @@
             </div>
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <a href="css_test_gameshop_littlenightmares.html" target="css_test_gameshop_littlenightmares.html">
+                    <a href="css_test_gameshop_littlenightmares.html">
                         <img src="img/l01.jpg" alt="리틀 나이트메어" style="width:100%">
                         <div class="caption">
                             <p>리틀 나이트메어</p>
@@ -57,10 +141,54 @@
             
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <a href="css_test_gameshop_xcom2.html" target="css_test_gameshop_xcom2.html">
+                    <a href="css_test_gameshop_xcom2.html">
                         <img src="img/x01.jpg" alt="엑스컴2" style="width:100%">
                         <div class="caption">
                             <p>엑스컴2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="css_test_gameshop_darksouls3.html">
+                        <img src="img/d01.jpg" alt="다크소울3" style="width:100%">
+                        <div class="caption">
+                            <p>다크소울3</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="css_test_gameshop_left4dead2.html">
+                        <img src="img/f01.jpg" alt="레프트4데드2" style="width:100%">
+                        <div class="caption">
+                            <p>레프트4데드2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="css_test_gameshop_nierautomata.html">
+                        <img src="img/n01.jpg" alt="니어:오토마타" style="width:100%">
+                        <div class="caption">
+                            <p>니어:오토마타</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="css_test_gameshop_battlegrounds.html">
+                        <img src="img/g01.jpg" alt="배틀그라운드" style="width:100%">
+                        <div class="caption">
+                            <p>배틀그라운드</p>
                         </div>
                     </a>
                 </div>

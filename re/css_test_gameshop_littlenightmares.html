@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -34,8 +30,36 @@
     <div class="t1">
         <a href="css_test_gameshop.html" class="btn btn-info" role="button">home</a>
     </div>
-    <div class="t2">
-        <button type="button" class="btn btn-primary btn-md">buy</button>
+    <div>
+        <button type="button" class="btn btn-primary btn-md t2" data-toggle="modal" data-target="#myModal1">buy</button>
+        
+        <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Little Nightmares </h4>
+                    </div>
+                    <div class="modal-body">
+                       <img src="img/l01.jpg" class="img-thumbnail" width="304" height="236">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li>visa</li>
+                            <li>master</li>
+                            <li>bitcoin</li>
+                            <li>payfal</li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="page-header">
@@ -102,7 +126,42 @@
                 </tr>
             </tbody>
         </table>
+        <div class="media">
+          <div class="media-left">
+              <p class="media-object"><span><i class="media-object glyphicon glyphicon-user"></i></span></p>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">쌍비</h4>
+            <p>지금도 짧은 겜인 주제에 DLC를 또 팔아쳐먹는다고?
+
+에라이 새끼들아 이런 정신 상태는 평가이전에 욕이다</p>
+          </div>
+          <div class="media-right">
+              <p class="media-object"><span><i class="glyphicon glyphicon-thumbs-down"></i></span></p>
+          </div>
+        </div>
+        </table>
+        <div class="media">
+          <div class="media-left">
+              <p class="media-object"><span><i class="media-object glyphicon glyphicon-user"></i></span></p>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Nox</h4>
+            <p>분위기가 상당히 맘에 드네요
+검은색 꿈틀이가 귀엽게 생겼길래 갔더니
+제 목을 졸라 죽이더군요 ㅎㅎ</p>
+          </div>
+          <div class="media-right">
+              <p class="media-object"><span><i class="glyphicon glyphicon-thumbs-up"></i></span></p>
+          </div>
+        </div>
         <br>
+        <footer>
+            <ul class="pager">
+              <li class="previous"><a href="css_test_gameshop_residentevil7.html">Previous</a></li>
+              <li class="next"><a href="css_test_gameshop_xcom2.html">Next</a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
