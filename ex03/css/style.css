@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+/*초기화*/
+*{padding: 0; margin: 0;}
+ul, li{list-style: none;}
+a{outline: 0; text-decoration: none;}
+img{border: 0;}
+body{font: 2em 'Poiret One'; background: black;}
+
+/*레이아웃*/
+header{
+  position: fixed; width: 15%; height: 100%; background-color: aliceblue;
+    top: 0; left: 0; transform: all 1s;
+}
+nav{
+    position: relative; width: 85%; height: 35px; background-color: antiquewhite; margin-left: 15%; transform: all 1s;
+}
+section{
+    width: 85%; position: relative; margin-left: 15%; 
+}
+article{
+    float: left; height: 260px; transition: all 1s; animation: scale 1s 1; 
+}
+@keyframes scale{
+    0%{transform: scale(0)}
+    100%{transform: scale(1)}
+}
+
+@keyframes t1{
+    0%{transform: rotate(0deg)}
+    12.5%{transform: rotate(45deg)}
+    25%{transform: rotate(90deg)}
+    50%{transform: rotate(135deg)}
+    62.5%{transform: rotate(180eg)}
+    75%{transform: rotate(225eg)}
+    87.5%{transform: rotate(270deg)}
+    100%{transform: rotate(315deg)}
+}
+
+@keyframes t2{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.5)}
+    100%{transform: scale(2)}
+}
+
+.ani1:hover{
+    animation-name: t1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.ani2:hover{
+    animation-name: t2;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+article:nth-child(1){
+    width: 60%; height: 520px; background-color: aqua;
+}
+
+article:nth-child(2){
+    width: 40%; background-color: aquamarine; 
+}
+
+article:nth-child(3){
+    width: 40%; background-color: azure; 
+}
+
+article:nth-child(4){
+    width: 50%; background-color: beige;
+}
+
+article:nth-child(5){
+    width: 50%; background-color: bisque;
+}
+
+@media screen and (min-width:1280px) and (max-width:1599px){
+    header { position: relative; width: 100%; height: 80px; }
+    nav{ width: 100%; margin-left: 0% }
+    section { width: 100%; margin-left: 0px; }
+    
+    article:nth-child(1){ width: 50%; }
+
+    article:nth-child(2){ width: 50%; height: 520px;}
+
+    article:nth-child(3){ width: 50%; }
+
+    article:nth-child(4){ width: 50%; }
+
+    article:nth-child(5){ width: 50%; display: none;}
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px){
+    header { position: relative; width: 100%; height: 80px; }
+    nav{ width: 100%; margin-left: 0% }
+    section { width: 100%; margin-left: 0px; }
+    
+    article:nth-child(1){ width: 75%; }
+
+    article:nth-child(2){ width: 25%; }
+
+    article:nth-child(3){ width: 25%; }
+
+    article:nth-child(4){ width: 50%; }
+
+    article:nth-child(5){ width: 50%; }
+}
+ 
+@media screen and (min-width:780px) and (max-width:1023px){
+    header { position: relative; width: 100%; height: 80px; }
+    nav{ width: 100%; margin-left: 0% }
+    section { width: 100%; margin-left: 0px; }
+    
+    article:nth-child(1){ width: 100%; height: 400px;}
+
+    article:nth-child(2){ width: 100%; }
+
+    article:nth-child(3){ width: 50%; }
+
+    article:nth-child(4){ width: 50%; }
+
+    article:nth-child(5){ width: 33.3333%; display: none;}
+}
+
+@media screen and (min-width:640px) and (max-width:799px){
+    header { position: relative; width: 100%; height: 80px; }
+    nav{ width: 100%; margin-left: 0% }
+    section { width: 100%; margin-left: 0px; }
+    
+    article:nth-child(1){ width: 100%; height: 400px;}
+
+    article:nth-child(2){ width: 100%; }
+
+    article:nth-child(3){ width: 33.3333%; }
+
+    article:nth-child(4){ width: 33.3333%; }
+
+    article:nth-child(5){ width: 33.3333%; }
+}
+    
+@media screen and (min-width:480px) and (max-width:639px){
+    header { position: relative; width: 100%; height: 130px; }
+    nav{ display: none;}
+    section { width: 100%; margin-left: 0px; }
+    artcle{height: 150px; }
+    
+    article:nth-child(1){ width: 100%; height: 300px;}
+
+    article:nth-child(2){ width: 100%; }
+
+    article:nth-child(3){ width: 50%; }
+
+    article:nth-child(4){ width: 50%; }
+
+    article:nth-child(5){ width: 50%; display: none;}
+}
+
+@media screen and (max-width:479px){
+    header { position: fixed; width: 100%; height: 40px; background-color: transparent; z-index: 5 }
+    nav{ display: none;}
+    section { width: 100%; margin-left: 0px; z-index: 4;}
+    artcle{ display: none;}
+    artcle:nth-child(1){display: block; position: fixed; width: 100%; height: 100%;}
+    
+    article:nth-child(1){ width: 100%; height: 300px;}
+
+    article:nth-child(2){ width: 100%; }
+
+    article:nth-child(3){ width: 100%; }
+
+    article:nth-child(4){ width: 100%; display: none;}
+
+    article:nth-child(5){ width: 50%; display: none;}
+}
