@@ -60,10 +60,20 @@
             font-size: 200px;
         }
         
-        @media scrren and (max-width: 768px){
-            .col-sm-4{
-                text-align: center;
-                margin: 25px 0;
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+              text-align: center;
+              margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
             }
         }
         
@@ -139,8 +149,8 @@
         }
         
         /*slide ani*/
-        .slideanim{visibility:hidden;}
-        .slide{
+        .slideanim {visibility:hidden;}
+        .slide {
             animation-name: slide;
             -webkit-animation-name: slide;
             animation-duration: 1s;
@@ -148,14 +158,26 @@
             visibility: visible;
         }
         
-        @keyframes slide{
-            0%{ opacity: 0; transform: translateY(70%);}
-            100%{ opacity: 1; transform: translateY(0%);}
+        @keyframes slide {
+          0% {
+            opacity: 0;
+            transform: translateY(70%);
+          } 
+          100% {
+            opacity: 1;
+            transform: translateY(0%);
+          }
         }
         
-        @-webkit-keyframes slide{
-            0%{ opacity: 0; -webkit-transform: translateY(70%);}
-            100%{ opacity: 1; -webkit-transform: translateY(0%);}
+        @-webkit-keyframes slide {
+          0% {
+            opacity: 0;
+            -webkit-transform: translateY(70%);
+          } 
+          100% {
+            opacity: 1;
+            -webkit-transform: translateY(0%);
+          }
         }
         
     </style>
@@ -198,7 +220,9 @@
               <h2>career</h2>
               <h4>2015, 안동대 컴퓨터공학과 졸업</h4>
               <p>2017, 절찬리 학원 다니는 취준생</p>       
-              <button class="btn btn-default btn-sm">더보기</button>
+              <a href="blog_introduce.html">
+                  <button class="btn btn-default btn-sm">더보기</button>
+              </a>
           </div>
       </div>
    </div>
@@ -237,23 +261,23 @@
        <div class="row text-center">
            <div class="col-sm-4">
                <div class="thumbnail">
-                   <img src="https://placehold.it/150x80?text=IMAGE" alt="#">
-                   <p><strong>?</strong></p>
-                   <p>??</p>
+                   <img src="img/project00.jpg" alt="#">
+                   <p><strong>java lotto</strong></p>
+                   <p>기존 소스를 토대로 소프트웨어공학을 응용한 프로젝트</p>
                </div>
            </div>
            <div class="col-sm-4">
                <div class="thumbnail">
-                   <img src="https://placehold.it/150x80?text=IMAGE" alt="#">
-                   <p><strong>?</strong></p>
-                   <p>??</p>
+                   <img src="img/project01.png"alt="#">
+                   <p><strong>Arduino IoT</strong></p>
+                   <p>아두이노를 이용한 마켓 정보수집및판독 시스템</p>
                </div>
            </div>
            <div class="col-sm-4">
                <div class="thumbnail">
-                   <img src="https://placehold.it/150x80?text=IMAGE" alt="#">
-                   <p><strong>?</strong></p>
-                   <p>??</p>
+                   <img src="img/project02.png"alt="#">
+                   <p><strong>virtual IoT</strong></p>
+                   <p>java+oracle db 을 이용한 가상 IoT 구축</p>
                </div>
            </div>
        </div>
@@ -351,36 +375,34 @@
    </footer>
    
    <!--script-->
-   <script>
-       /*scroll*/
-       $(document).ready(function(){
-           $(".navbar a, footer a[href='#myPage']").on('click', function(event){
-               if(this.hash!==""){
-                event.preventDefault();   
-               
-               
-               var hash=this.hash;
-               
-               $('html, body').animate({
-                   scrollTop: $(hash).offset().top
-               },900, function(){
-                   window.location.hash=hash;
-               });
-           }
-           });
-       })
-       
-       /*silde*/
-       $(window).scroll(function(){
-           $(".slideanim").each(function(){
-               var pos=$(this).offset().top;
-               
-               var winTop=$(window).scrollTop();
-               if(pos<winTop+600){
-                  $(this).addClass("slide");
-               }
-           });
-       });
-   </script>
+    <script>
+    $(document).ready(function(){
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+
+            window.location.hash = hash;
+          });
+        } 
+      });
+
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+        });
+      });
+    })
+    </script>
 </body>
 </html>
