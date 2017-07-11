@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testhome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /*top*/
+        .navbar {
+            margin-bottom: 0;
+            background-color: #ffeeee;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #ffeeee !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        
+        /*main header*/
+        .jumbotron{
+            background-color: #ffcccc;
+            color: #ffffff;
+            padding: 100px; 25px;
+        }
+        
+        /*section 1*/
+        .bg-grey{
+            background-color: #f6f6f6f6;
+        }
+        
+        .container-fluid{
+            padding: 60px 50px;
+        }
+        
+        .logo{
+            color: #ffcccc;
+            font-size: 200px;
+        }
+        
+        .logo-small{
+            color: #ffcccc;
+            font-size: 50px;
+        }
+        
+        @media screen and (max-width:768px){
+            .col-sm-4{
+                text-align: center;
+                margin: 25px 0;
+            }    
+        }
+        
+        /*section 3*/
+        .thumbnail{
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .thumbnail img{
+            width:100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+           $('.t1').hover(function(){
+              $(this).animate({
+                  opacity:0
+              },'slow'); 
+               $(this).animate({
+                  opacity:1
+              },'slow'); 
+           });
+        });
+    </script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <!--main header-->
+    <div class="jumbotron text-center">
+        
+        <h1>test</h1>
+        <p>ex</p>
+                
+    </div>
+    
+    <!--section 1-->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>section1</h2>
+                <h4>test1</h4>
+                <p>ex1</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>section1</h2>
+                <h4><strong>test2</strong></h4>
+                <p><strong>ex2</strong></p>
+            </div>
+        </div>
+        
+        <!--section 2-->
+        <div id="services" class="container-fluid text-center">
+            <h2>section2</h2>
+            <h4>test1</h4>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="glyphicon glyphicon-off"></span>
+                    <h4>power</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <h4>power</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!--section 3-->
+        <div id="portfolio" class="container text-center bg-grey">
+           <h1>section3</h1>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                   <div class="thumbnail">
+                       <img src="#" alt="#">
+                   </div>
+                </div>
+                <div class="col-sm-4">
+                   <div class="thumbnail">
+                       <img src="#" alt="#">
+                   </div>
+                </div>
+                <div class="col-sm-4">
+                   <div class="thumbnail">
+                       <img src="#" alt="#">
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--nav-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand t1" href="#">logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
